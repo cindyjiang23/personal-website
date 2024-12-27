@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Cindy Jiang | Photography</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cindy Jiang, Recruiting">
+    <meta name="description" content="Chapter 2 is Japan.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #container {
+            width: 1100px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(225, 193, 152);
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+        h2 {
+            position: relative;
+            left: 20px;
+            font-family: "CormorantGaramond-Regular";
+        }
+
+        #box_1, #box_2, #box_3, #box_4, #box_5, #box_6 {
+            width: 300px;
+            height: 300px;
+            margin: 5px 5px; 
+            margin-bottom: 40px;
+        }
+
+        .row_1, .row_2 {
+            display: flex;
+            justify-content: center; 
+        }
+
+        #image img {
+            width: 100%;
+            height: auto;
+        }
+
+        #description {
+            text-align: left;
+            font-family: "CormorantGaramond-Regular"; 
+            font-size: 1.1em; 
+            line-height: 1.5; 
+            color: #333; 
+            padding-top: 20px; 
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            padding: 10px 20px;
+            text-align: left;
+            width: 200px;
+        }
+
+        .dropdown li a {
+            color: rgb(77, 77, 77);
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dropdown li a:hover {
+            color: #fff;
+            background-color: #eedbc5; 
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Chapter 2: Reminiscing Japan</h1>
+        </div> <!--#header-->
+    </div> <!--#wrapper-->
+
+    <div id="container">
+        <div id="description">
+            <p>Born in Japan but leaving at the age of five, I’ve always felt there’s something special about Japan, tucked away in the corners of my memory. Yet, those memories are like puzzle pieces, their edges blurred with time. Every time I visit Japan, once every two years, I find myself trying to piece them together, retracing the fragments of my childhood.</p>
+            <p>In the summer of 2023, I spent precious weeks with my family in Matsuyama, immersing myself in the simplicity and joy of everyday moments. Through my camera lens, I captured the unfiltered laughter and innocence of my Japanese cousins—their carefree smiles a reflection of the life I once lived. These fleeting moments of connection became a bridge between my present and the echoes of my childhood.</p>
+            <p>This chapter is not just a collection of photographs but a tapestry of nostalgia and reconnection—a visual diary of rediscovering Japan, my roots, and the warmth of family that weaves it all together.</p>
+        </div>
+        <div id="image">
+            <h2>Matsuyama, Japan</h2>
+            <div class="row_1">
+                <div id="box_1">
+                    <img src="img/japan/0.JPG" alt="akari">
+                </div>
+                <div id="box_2">
+                    <img src="img/japan/1.JPG" alt="dad">
+                </div>
+                <div id="box_3">
+                    <img src="img/japan/2.JPG" alt="akari">
+                </div>
+            </div>
+            <div class="row_2">
+                <div id="box_4">
+                    <img src="img/japan/3.JPG" alt="dumplings">
+                </div>
+                <div id="box_5">
+                    <img src="img/japan/4.JPG" alt="sisters">
+                </div>
+                <div id="box_6">
+                    <img src="img/japan/5.JPG" alt="cousins">
+                </div>
+            </div>
+        </div> <!--#image-->
+    </div> <!--#container-->
+
+    <div id="footer">
+        Cindy Jiang &copy; 2025 
+    </div> <!--footer-->
+</body>
+</html>

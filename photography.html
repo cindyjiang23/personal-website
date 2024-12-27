@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cindy Jiang | Photography</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cindy Jiang, Recruiting">
+    <meta name="description" content="This page contains my photography work while traveling around mainland China to document local lives and views through my camera.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+        
+        #container {
+            width: 1100px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(225, 193, 152);
+            padding: 20px;
+            display: flex;
+            align-items: center; 
+            gap: 20px; /* Space between the image and text */
+
+        }
+
+        #me {
+            flex: 1;
+        }
+
+        #me img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        #description {
+            flex: 1;
+        }
+
+        #description p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+            font-family: "CormorantGaramond-Regular";
+            
+        }
+
+        /* Chapter Options Styling */
+        #chapter-options {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        #chapter-options h2 {
+            font-family: "CormorantGaramond-Regular", serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: rgb(77, 77, 77);
+        }
+
+        .chapter-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .chapter-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .chapter-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .chapter-card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            font-family: "CormorantGaramond-Regular", serif;
+            font-size: 1.2em;
+        }
+
+        .chapter-card:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        .chapter-card:hover .overlay {
+            background: rgba(0, 0, 0, 0.8); /* Darker overlay on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Photography</h1>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div id="nav">
+            <ul style="justify-content: center; display: flex; gap: 20px;"> <!-- Center the nav items -->
+                <li style="background-color: rgba(171, 191, 244, 0.79); border-radius: 5px;">
+                    <a href="chapter1-china.html" style="color: #000; font-weight: bold;">Chapter 1: Enchanting China</a>
+                </li>
+                <li style="background-color: rgba(242, 206, 225, 0.9); border-radius: 5px;">
+                    <a href="chapter2-japan.html" style="color: #000; font-weight: bold;">Chapter 2: Reminiscing Japan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div id="container">
+        <div id="me">
+            <img src="img/image.png" alt="me">
+        </div>
+        <div id="description">
+            <p>
+                On the left is a portrait of me at the age of 18. Ever since I was a child, my mother would take me to a photography studio once every four years. I once asked her why this tradition mattered so much. She smiled and said, 
+                <i>"Photography turns every portrait into a witness of time."</i>
+                She told me that one day, when I grew older, these photos would become cherished treasures, preserving memories of me, of us, and of the life we shared as a family.
+            </p>
+            <p>As I reflect on her words, I realize how profoundly they shaped my love for photography. Through the lens of a camera, I’ve learned to see not just faces but emotions, not just scenes but stories. Photography has become my way of holding onto the fleeting beauty of life, a way of turning memories into something everlasting. 
+            </p>
+            <p>Here, I present Chapter 1 and Chapter 2—together, a love letter to my two hometowns.</p>
+        </div>
+    </div>
+
+    <div id="chapter-options">
+        <h2>Explore the Chapters</h2>
+        <div class="chapter-grid">
+            <a href="chapter1-china.html" class="chapter-card">
+                <img src="img/photography/dali/IMG_8582.jpg" alt="Chapter 1 - China">
+                <div class="overlay">Chapter 1: Enchanting China</div>
+            </a>
+            <a href="chapter2-japan.html" class="chapter-card">
+                <img src="img/japan/0.JPG" alt="Chapter 2 - Japan">
+                <div class="overlay">Chapter 2: Reminiscing Japan</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="footer">
+        Cindy Jiang &copy; 2025
+    </div>
+</body>
+</html>

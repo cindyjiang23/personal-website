@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Cindy Jiang | Visualization</title>
+
+    <meta charset="utf-8">
+
+	<meta name="keywords" content="Cindy Jiang, Recruiting">
+
+	<meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+    #container {
+        width: 1100px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(225, 193, 152);
+        padding: 20px;
+    }
+    #final-project li{
+        font-family: "CormorantGaramond-Regular";
+        font-size: 1em;
+    }
+    #final-project h2{
+        font-family: "CormorantGaramond-Regular";
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            padding: 10px 20px;
+            text-align: left;
+            width: 200px;
+        }
+
+        .dropdown li a {
+            color: rgb(77, 77, 77);
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dropdown li a:hover {
+            color: #fff;
+            background-color: #eedbc5;
+            border-radius: 3px;
+        }
+    
+
+    </style>
+
+    <body>
+
+    <div id="wrapper">
+        <div id="header">
+            <h1>Data Visualization</h1>
+        </div> <!--#header-->
+    </div> <!--#wrapper-->
+
+    <div id="container">
+
+    <div id="navbar">
+		<div id="nav">
+
+			<ul>
+				<li id="home"><a href="home.html">Home</a></li>
+				<li id="about">
+                    <a href="about.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li id="visualization"><a href="visualization.html" id="active-nav">Visualization</a></li>
+                <li id="portfolio">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+			</ul>
+
+		</div> <!-- #nav -->
+	</div> <!-- #navbar -->
+
+    <div id="final-project">
+        <h2>Neighborhood Visualization and Analysis</h2>
+        <ul>
+            <li>This project was collaboratively developed with three team members, focusing on advanced data visualization techniques and interactive platform design.</li>
+            <li>We aim to craft a 3D interactive platform that fuses multi-faceted datasets to deliver actionable insights for safer, smarter travels through Los Angeles neighborhoods.</li>
+            <li>
+                Click to view the <a href="paper.pdf" target="_blank" style="text-decoration: none; color: #0073e6;">Project Paper</a>.
+            </li>
+        </ul>
+        <iframe 
+            src="https://dsci-554.github.io/project-trojans-with-bulldog/" 
+            width="100%" 
+            height="800px" 
+            style="border: none;">
+        </iframe>
+        <div style="text-align: center; margin-top: 20px;">
+            <a 
+                href="https://dsci-554.github.io/project-trojans-with-bulldog/" 
+                target="_blank" 
+                style="text-decoration: none; background-color: rgb(165, 129, 77); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'CormorantGaramond-Regular', serif; font-size: 1em;">
+                View Full-Size Project
+            </a>
+        </div>
+    </div>
+
+    </div> <!-- #container -->
+    
+    <div id="footer">
+        Cindy Jiang &copy; 2025
+    </div> <!--footer-->
+</body>
+</html>

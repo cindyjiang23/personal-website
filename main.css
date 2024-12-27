@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Luna";
+    src: url("fonts/Luna.ttf");
+}
+@font-face {
+    font-family: "Moon Flower Bold";
+    src: url("fonts/Moon Flower Bold.ttf");
+}
+@font-face {
+    font-family: "I Love Glitter - TTF";
+    src: url("fonts/I Love Glitter - TTF.ttf");
+}
+@font-face {
+    font-family: "GeosansLight";
+    src: url("fonts/GeosansLight.ttf");
+}
+@font-face {
+    font-family: "Darling";
+    src: url("fonts/Darling.ttf");
+}
+@font-face {
+    font-family: "Dominique";
+    src: url("fonts/Dominique.otf");
+}
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("fonts/AbrilFatface-Regular.ttf");
+}
+@font-face {
+    font-family: "Alice-Regular";
+    src: url("fonts/Alice-Regular.ttf");
+}
+@font-face {
+    font-family: "CormorantGaramond-Regular";
+    src: url("fonts/CormorantGaramond-Regular.ttf");
+}
+
+
+
+body {
+    background-color: wheat;
+    margin: 0px;
+    }
+
+    #header {
+        text-align: center;
+        position: relative;
+        top: 60px;
+        
+    }
+    #wrapper {
+    height: 150px;
+    width: auto;
+    background-color: rgb(176, 144, 111);
+    }
+    h1 {
+        font-family: "AbrilFatface", cursive;
+        font-weight: normal;
+        font-size: 2.5em;
+    }
+
+
+    #footer {
+    background-color: rgb(165, 137, 101);
+    text-align: center;
+    font-family: "Alice-Regular";
+
+    height: 50px;
+    line-height: 50px;
+    color:#FFF;
+    padding: 0px;
+    margin: 0px;
+
+    }
+
+
+    #nav {
+    
+    width: 900px;
+    margin: auto;
+    }
+    #nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    }
+
+    #nav li {
+    width: 225px;
+    background-color: whitesmoke;
+    
+    text-align: center;
+    position: relative;
+        }
+    #home:hover {
+        background-color: rgba(171, 191, 244, 0.79);
+        }
+    #about:hover {
+        background-color: peachpuff;
+    }
+    #visualization:hover {   
+        background-color: rgb(241, 241, 180);
+        }
+    #portfolio:hover {
+        background-color: rgba(193, 235, 193, 0.865);
+        }
+    #photography:hover {
+        background-color: rgb(242, 206, 225);
+        }
+    #resume:hover {
+        background-color: rgb(227, 230, 183);
+        }
+    #contact:hover {   
+        background-color: lightblue;
+        }
+
+    #nav > ul {
+    display: flex;
+    align-items: flex-start;
+    }
+
+    #nav a {
+    text-decoration: none;
+    color: rgba(40, 26, 48, 0.975);
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    }
+
+    #nav li:hover > ul {
+    display: block;
+    }
+
+    #navbar {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    }
+    a {
+    font-family: "Alice-Regular", cursive;
+    font-weight: normal;
+    font-size: 1em;
+    }
+    
+

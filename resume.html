@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Cindy Jiang | Resume</title>
+
+    <meta charset="utf-8">
+
+	<meta name="keywords" content="Cindy Jiang, Recruiting">
+
+	<meta name="description" content="This page contains my resume. It is a pdf version of my resume, which includes my personal information, education background, experiences, internships, and skills. This section is to help viewers, espcially potentional future employers to better know me.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #container {
+            width: 1100px;
+            height: auto; 
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(225, 193, 152);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 20px; 
+
+        }
+
+        #resume1 {
+            background-color: #f9f9f9; 
+            padding: 40px; 
+            margin-top: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            width: 90%; 
+            max-width: 1000px; 
+            font-family: "CormorantGaramond-Regular";
+        }
+
+        .resume-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; 
+        }
+
+        .resume-section {
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 20px; 
+        }
+
+        .resume-section:last-child {
+            border-bottom: none; 
+        }
+
+        .resume-section h2 {
+            font-size: 1.8em;
+            color: #333; 
+            margin-bottom: 15px; 
+            border-left: 5px solid burlywood;
+            padding-left: 10px; 
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px; 
+        }
+
+        ul li {
+            line-height: 1.5;
+            color: #444;
+        }
+
+        a {
+            color: #0073e6; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+
+        .position-date {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center; 
+            margin-bottom: 10px;
+        }
+
+        .position-date p {
+            margin: 0; 
+        }
+
+        .right-aligned {
+            text-align: right; 
+            font-size: 1em; 
+            color: #666;
+            font-weight: bold;
+        }
+ 
+        #pdf-link {
+            margin-top: 20px; 
+            text-align: center; 
+            font-size: 1.1em;
+            font-family: "CormorantGaramond-Regular";
+        }
+
+        #pdf-link a {
+            color: #0073e6; 
+            text-decoration: none;
+            font-weight: bold; 
+            font-family: "CormorantGaramond-Regular";
+        }
+
+        #pdf-link a:hover {
+            text-decoration: underline; 
+            color: #005bb5; 
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            padding: 10px 20px;
+            text-align: left;
+            width: 200px;
+        }
+
+        .dropdown li a {
+            color: rgb(77, 77, 77);
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dropdown li a:hover {
+            color: #fff;
+            background-color: #eedbc5;
+            border-radius: 3px;
+        }
+
+
+
+    </style>
+
+    <body>
+
+    <div id="wrapper">
+        <div id="header">
+            <h1>Resume</h1>
+        </div> <!--#header-->
+    </div> <!--#wrapper-->
+
+    <div id="navbar">
+		<div id="nav">
+
+            <ul>
+				<li id="home"><a href="home.html">Home</a></li>
+				<li id="about">
+                    <a href="about.html">About</a>
+                </li>
+                <li id="visualization"><a href="visualization.html">Visualization</a></li>
+                <li id="portfolio">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+			</ul>
+
+		</div> <!-- #nav -->
+	</div> <!-- #navbar -->
+
+    <div id="container">
+
+    <!-- Resume Section -->
+    <section id="resume1">
+        <div class="resume-container">
+
+            <!-- Basic Information -->
+            <div class="resume-section" id="basic-info">
+                <h2>Basic Information</h2>
+                <ul>
+                    <li><strong>Address:</strong> 3584 S Figueroa St, Los Angeles, CA 90007</li>
+                    <li><strong>Phone:</strong> 323-649-0470</li>
+                    <li><strong>Email:</strong> <a href="mailto:cindyjiang723@gmail.com">cindyjiang723@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section" id="education">
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>University of Southern California, Viterbi School of Engineering</h3>
+                    <p><strong>Master of Science, Communication Data Science</strong></p>
+                    <p>Coursework: Data Visualization, Data Science for Communication and Social Networks, Data Science at Scale, Theoretical Approaches to Multidisciplinary Design Projects; Integrated Communication Strategies; Audience Analysis</p>
+                </div>
+                <div class="education-entry">
+                    <h3>University of Southern California, Annenberg School for Communication and Journalism</h3>
+                    <p><strong>Bachelor of Arts, Major in Communication, Minor in Business Finance</strong></p>
+                    <p>GPA: 3.9/4.0 | Honors: London Study Abroad Program (Spring 2023), USC Dean’s List</p>
+                </div>
+            </div>
+
+            <!-- Professional Experiences -->
+            <div class="resume-section" id="experience">
+                <h2>Professional Experiences</h2>
+                <div class="experience-entry">
+                    <h3>Easley Dunn Productions, Inc.</h3>
+                    <div class="position-date">
+                        <p><strong>Creative Economy Strategy Intern</strong></p>
+                        <p class="right-aligned">Los Angeles, California | Jun - Dec 2024</p>
+                    </div>
+                    <ul>
+                        <li>Collaborated with USC’s award-winning Prof. Scott Easley and led the Economy team to design wagering for the game
+                            RobotRace on Apple Store. Developed a new badge system linked to player XP levels to enhance user retention.</li>
+                        <li>Analyzed player behavior data using Exploratory Data Analysis (EDA) and statistical methods to identify trends,
+                            optimize user engagement strategies, and define actionable key performance indicators (KPIs) for growth.</li>
+                        <li>Created dynamic data visualizations and interactive dashboards to communicate insights to cross-functional teams,
+                            enabling data-driven decisions for game design, player experience enhancements, and monetization strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry">
+                    <h3>Deloitte Consulting</h3>
+                    <div class="position-date">
+                        <p><strong>Strategy Consulting Intern</strong></p>
+                        <p class="right-aligned">Shanghai, China | May - Aug 2023</p>
+                    </div>
+                    <ul>
+                        <li>Participated in the project of “Industrial Development Planning of Beijing Huairou Science City” under the leadership
+                            of the Director of Strategy, Analytics and M&A (SAM), delivering strategic insights by conducting targeted analyses on
+                            the stainless steel industry and major consumer packaged goods companies to identify growth opportunities and trends.</li>
+                        <li>Used R and Python to conduct an in-depth visual analysis of 100+ enterprises from the global scientific instrument and
+                            sensor industry, and studied the business performance, corporate structure, investment and expansion strategies.</li>
+                        <li>Developed financial models and forecasts to assess potential merger and acquisition opportunities, analyzing critical
+                            metrics such as valuation, ROI, and cost synergies, while benchmarking client performance against industry standards.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry">
+                    <h3>VIITTA Fashion, London</h3>
+                    <div class="position-date">
+                        <p><strong>Design Assistant Intern</strong></p>
+                        <p class="right-aligned">London, United Kingdom | Mar - May 2023</p>
+                    </div>
+                    <ul>
+                        <li>VIITTA Fashion is a London-based sustainable clothing brand specializing in handmade garments using a macramé
+                            knotting technique and a strict zero-waste policy. Contributed to optimizing material usage, while assisting in expanding
+                            the product line limited-edition designs that aligned with the brand’s commitment to environmental responsibility.</li>
+                        <li>Supported product photoshoots by coordinating styling and logistics, and attended events to promote brand awareness.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry">
+                    <h3>Wyndham Hotels & Resorts, APAC</h3>
+                    <div class="position-date">
+                        <p><strong>Human Resources Intern</strong></p>
+                        <p class="right-aligned">Shanghai, China | May – Aug 2021</p>
+                    </div>
+                    <ul>
+                        <li>Translated documents, including contracts, financial reports, and business letters, from Mandarin to English for the Vice
+                            President of Human Resources. Arranged phone calls and face-to-face interviews for the Director of Human Resources.</li>
+                        <li>Reviewed and selected resumes for positions across the Shanghai Headquarters and hotels, ensuring alignment with role
+                            requirements, and updated candidates to the Human Resources Coordinator daily for timely follow-ups and interviews.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry">
+                    <h3>Shanghai Media Group</h3>
+                    <div class="position-date">
+                        <p><strong>News Editor Intern</strong></p>
+                        <p class="right-aligned">Shanghai, China | Jan – Jul 2021</p>
+                    </div>
+                    <ul>
+                        <li>Worked under Channel Two and established a brand-new TikTok program called “Shanghainese Chit Chat” with a
+                            group of seniors. We have successfully produced 553 videos so far and gained 369k likes, with 91k followers in total.</li>
+                        <li>Edited short videos for the program covering current news, all spoken in standard Shanghainese, with the goal of
+                            promoting, preserving, and cherishing the local language and cultural heritage while fostering intergenerational pride.</li>
+                        <li>Connected with “Big V” bloggers like Afu Thomas and Amanda Tastes, to explore business cooperation opportunities.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="resume-section" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Technologies:</strong> Python (Pandas, Matplotlib, NumPy, Seaborn, Beautiful Soup), Javascript (D3.js), R, SQL, HTML, A/B testing, Microsoft Office Suite, Final Cut Pro, Adobe Photoshop</li>
+                    <li><strong>Languages:</strong> Japanese (JLPT N1), English (Native), Mandarin (Native)</li>
+                    <li><strong>Interests:</strong> Focaccia Baking, Golf, Competitive Tennis, Relationship Counseling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="pdf-link">
+        <a href="Cindy Jiang Resume.pdf" target="_blank">Click here to view PDF version</a>
+    </div>
+
+
+
+    </div> <!--#container-->
+    <div id="footer">
+        Cindy Jiang &copy; 2025
+    </div> <!--footer-->
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Cindy Jiang | About</title>
+
+    <meta charset="utf-8">
+
+	<meta name="keywords" content="Cindy Jiang, Recruiting">
+
+	<meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+    <style>
+
+    .slide-item {
+    max-width: 100%;             /* Prevent images from overflowing */
+    height: auto;                /* Maintain aspect ratio */
+    border-radius: 10px;         /* Optional: Add styling like rounded corners */
+    display: inline-block;       /* Ensure images are treated as inline elements */
+    }
+
+    #me img {
+        max-width: 400px;           /* Control the size of the image */
+        height: auto;               /* Maintain aspect ratio */
+        display: block;             /* Ensure clean display */
+        margin: 0 auto;             /* Optional: Center image if it wraps */
+    }
+    .slide-item {
+        width: 100%;                /* Matches the parent container's width */
+        max-width: 400px;           /* Use the same size as `#me img` */
+        height: auto;               /* Maintain the aspect ratio */
+        display: block;             /* Ensure consistent rendering */
+        margin: 0 auto;             /* Center the image horizontally */
+        border-radius: 10px;        /* Optional: Style the images (e.g., rounded corners) */
+    }
+    #container {
+        width: 1100px;
+        height: 2500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(225, 193, 152);
+        padding: 20px;
+    }
+
+    #content-wrapper {
+        display: flex;              /* Use Flexbox for layout */
+        align-items: flex-start;    /* Align items at the top */
+        justify-content: flex-start; /* Align items to the start of the container */
+        flex-wrap: wrap;            /* Allow wrapping on smaller screens */
+        margin: 50px auto;          /* Add margin around the container */
+    }
+
+    #content-wrapper > div {
+        flex: 1;                    /* Allow text container and image to take equal space */
+        min-width: 300px;           /* Prevent text from shrinking too much */
+    }
+
+    #introduction p{
+        font-family: "Moon Flower Bold", cursive;
+        font-weight: normal;
+        font-size: 2em;
+        text-align: center;
+        position: relative;
+        top: 100px;
+        right: 30px;
+    }
+
+    #introduction-2 p{
+        font-family: "CormorantGaramond-Regular";
+        font-weight: normal;
+        font-size: 1.1em;
+        text-align: left;
+        position: relative;
+        top: 120px;
+        right: 30px;
+        line-height: 1.6;
+    }
+
+
+    #conclusion h2{
+        font-family: "Dominique", cursive;
+        font-weight: normal;
+        font-size: 2em;
+        text-align: center;
+        position: relative;
+        top: 200px;
+
+    }
+
+    /* Section Container */
+    #life-bits {
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    /* Title Styling */
+    #life-bits h2 {
+        font-family: "Moon Flower Bold", serif;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Golf Video Styling */
+    #golf-video video {
+        width: 60%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+
+    /* Photo Gallery Styling */
+    #photo-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Photo Container Styling */
+    .photo-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .photo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Keyword Tag Styling */
+    .keyword-tag {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-family: "CormorantGaramond-Regular", serif;
+    }
+    /* Wimbledon Styling */
+    #Wimbledon {
+        display: flex;
+        justify-content: center; /* Center all items horizontally */
+        align-items: center; /* Center all items vertically */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        width: 100%; /* Full-width container */
+        height: 100vh; /* Full viewport height for centering */
+        margin: 0 auto; /* Center the container itself */
+    }
+
+    /* Individual Wimbledon Container */
+    .wimbledon-container {
+        position: relative;
+        width: 500px;
+        height: 400px;
+        display: flex; /* Ensure Flexbox for internal alignment */
+        justify-content: center; /* Center image horizontally inside container */
+        align-items: center; /* Center image vertically inside container */
+        margin: 0 auto; /* Center container itself */
+    }
+
+    /* Wimbledon Image Styling */
+    .wimbledon-container img {
+        max-width: 100%; /* Ensure the image fits the container */
+        max-height: 100%; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fills the container */
+        border-radius: 10px; /* Optional: Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add depth */
+    }
+
+    /* Keyword Tag Styling */
+    .keyword-name {
+        position: absolute;
+        bottom: 20px; /* Adjust positioning */
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.7); /* Background for contrast */
+        color: #fff;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-family: "CormorantGaramond-Regular", serif;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            padding: 10px 20px;
+            text-align: left;
+            width: 200px;
+        }
+
+        .dropdown li a {
+            color: rgb(77, 77, 77);
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dropdown li a:hover {
+            color: #fff;
+            background-color: #eedbc5;
+            border-radius: 3px;
+        }
+
+
+
+    </style>
+
+    <body>
+
+    <div id="wrapper">
+        <div id="header">
+            <h1>About Me</h1>
+        </div> <!--#header-->
+    </div> <!--#wrapper-->
+
+    <div id="container">
+
+    <div id="navbar">
+		<div id="nav">
+
+			<ul>
+				<li id="home"><a href="home.html">Home</a></li>
+				<li id="about">
+                    <a href="about.html" id="active-nav">About</a>
+                    <ul class="dropdown">
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li id="visualization"><a href="visualization.html">Visualization</a></li>
+                <li id="portfolio">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+			</ul>
+
+		</div> <!-- #nav -->
+	</div> <!-- #navbar -->
+
+    <div id="content-wrapper">
+        <div id="me">
+            <img src="img/me.png" alt="Me">
+        </div> <!--#me-->
+    
+        <div>
+            <div id="introduction">
+                <p>Cindy Jiang</p>
+            </div> <!--#introduction-->
+    
+            <div id="introduction-2">
+                <p>I was born in Tokyo, grew up in Shanghai, and now call Los Angeles home while pursuing a master's in Communication and Data Science at USC. In Spring 2023, I spent a semester in London, exploring the city with my friends and cohort—an unforgettable chapter of my life.</p>
+                <p>My passion for data goes beyond numbers; I see it as a canvas for storytelling and innovation, connecting insights to real-world impact. I recently became a golf addict, and yes, I’m the type to analyze my swing data.</p>
+            </div> <!--#introduction-2-->
+        </div>
+    </div> <!--#content-wrapper-->
+
+    <div id="life-bits">
+        <h2>Bits & Pieces of My Life</h2>
+    
+        <!-- Photos with Keyword Tags -->
+        <div id="photo-gallery">
+            <div class="photo-container">
+                <span class="keyword-tag">Friends</span>
+                <img src="img/friends.png" alt="Friends">
+            </div>
+            <div class="photo-container">
+                <span class="keyword-tag">Athlete</span>
+                <img src="img/athlete.png" alt="Athlete">
+            </div>
+            <div class="photo-container">
+                <span class="keyword-tag">Foodie</span>
+                <img src="img/foodie.png" alt="Foodie">
+            </div>
+            <div class="photo-container">
+                <span class="keyword-tag">Hokkaido</span>
+                <img src="img/hokkaido.png" alt="Hokkaido">
+            </div>
+            <div class="photo-container">
+                <span class="keyword-tag">Thailand</span>
+                <img src="img/thailand.png" alt="Thailand">
+            </div>
+            <div class="photo-container">
+                <span class="keyword-tag">Matsuyama</span>
+                <img src="img/matsuyama.png" alt="Matsuyama">
+            </div>
+        </div>
+
+        <!-- Golf Swing Video -->
+        <div id="golf-video">
+            <video controls>
+                <source src="img/golf.mov" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="wimbledon">
+            <div class="wimbledon-container">
+                <span class="keyword-name">Wimbledon</span>
+                <img src="img/wimbledon.png" alt="Wimbledon">
+            </div>
+        </div>
+    </div>
+    
+
+    </div> <!-- #container -->
+
+    <div id="footer">
+        Cindy Jiang &copy; 2025
+    </div> <!--footer-->
+</body>
+</html>
