@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy Jiang | Final Project Homepage</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling */
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Top Bar with Social Icons */
+        .top-bar {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .top-bar a {
+            font-size: 1.8rem; /* Icon size */
+            color: rgb(77, 77, 77);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .top-bar a:hover {
+            color: rgb(176, 144, 111); /* Matches button color */
+            transform: scale(1.2);
+        }
+
+        /* Main Container */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 5px; /* Minimal space between images */
+            padding-top: 100px; /* Leaves a bit of blank space at the top */
+        }
+
+        /* Image Section */
+        .image-section {
+            display: flex;
+            gap: 5px; /* Padding between images */
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 50%; /* Each side gets two images occupying full width */
+            height: calc(100vh - 40px); /* Taller images leaving some blank space at the top */
+            object-fit: cover;
+        }
+
+        /* Centered Name Icon and Text */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            z-index: 5; /* Ensures visibility */
+        }
+
+        .center-content img {
+            width: 200px; /* Size for the name icon */
+            height: auto;
+        }
+
+        .center-content .enter-text {
+            font-family: 'Alice-Regular';
+            font-size: 1.2rem;
+            color: rgb(77, 77, 77);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .center-content .arrow {
+            font-size: 2rem;
+            color: rgb(176, 144, 111);
+            margin-top: 5px;
+            animation: bounce 1.5s infinite; /* Add animation */
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar with Social Media Icons -->
+    <div class="top-bar">
+        <a href="https://www.instagram.com/cccindy.jianggg/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/cindy-jiang-53a608237/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Images -->
+        <div class="image-section">
+            <img src="img/image1.jpg" alt="Image 1">
+            <img src="img/image2.jpg" alt="Image 2">
+        </div>
+
+        <!-- Center Content: Name Icon and Text -->
+        <div class="center-content">
+            <img src="img/logo.png" alt="Cindy Jiang Logo">
+            <a href="about.html" class="enter-button">Enter</a>
+        </div>
+        
+        <style>
+            /* Button Styling */
+            .enter-button {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-family: 'CormorantGaramond-Regular';
+                font-size: 1.2rem;
+                color: #fff;
+                background-color: rgb(176, 144, 111); /* Matches color theme */
+                text-decoration: none;
+                border-radius: 25px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                text-align: center;
+            }
+        
+            .enter-button:hover {
+                background-color: rgb(145, 120, 90); /* Darker shade for hover */
+                transform: scale(1.05); /* Slight zoom on hover */
+            }
+        </style>
+        <!-- Right Images -->
+        <div class="image-section">
+            <img src="img/image3.jpg" alt="Image 3">
+            <img src="img/image4.jpg" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
+
